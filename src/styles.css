@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --snackbar-color: white;
+    --snackbar-color-text: rgb(35, 53, 80);
+    --tw-border-opacity: 1;
+    --primary-color:#74FEBD;
+    --secondary-color: #0172AF;
+    --primary-color-light: #f5f6ff;
+    --tw-gradient-color:  var(--secondary-color),var(--primary-color);
+      --body-color: #f5f7f9;
+      --toggle-color: #DDD;
+      --sidebar-color: #FFF;
+      --text-color: #7F7F7F;
+      --white-color: #ffffff;
+          /* ====== Transition ====== */
+          --tran-03: all 0.2s ease;
+          --tran-03: all 0.3s ease;
+          --tran-04: all 0.3s ease;
+          --tran-05: all 0.3s ease;
+  }
+  
+  .hide{
+    display: none !important;
+  }
+  
+  .border-gradient {
+  
+      background: white;
+      border: double 2px transparent;
+      border-radius: 50%;
+      background-image: linear-gradient(white, white), 
+                        linear-gradient(to right, #0172AF, #74FEBD);
+      background-origin: border-box;
+      background-clip: content-box, border-box; 
+      box-decoration-break: clone;
+    }
