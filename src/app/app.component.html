@@ -1,1 +1,23 @@
-<app-lab-container></app-lab-container> 
+<header class='font-roboto'>
+    <h1>main nav here</h1>
+    <nav>
+        <ul class='flex items-center justify-center gap-x-4'>
+            <li>
+                <a routerLink="home" routerLinkActive="font-extrabold bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text" 
+                class="text-2xl text-black/25">PRACTICE</a>
+            </li>
+            <li>
+                <a routerLink="lab" routerLinkActive="font-extrabold bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text" 
+                class="text-2xl text-black/25">LAB</a>
+            </li>
+            <li>
+                <a routerLink="test" routerLinkActive="font-extrabold bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text" 
+                class="text-2xl text-black/25">MODULE</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>

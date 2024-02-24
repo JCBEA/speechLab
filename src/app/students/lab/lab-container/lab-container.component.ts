@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./lab-container.component.css']
 })
 export class LabContainerComponent {
-  isClicked: boolean = false;
+  isClicked: boolean = true;
 }

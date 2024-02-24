@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./lab-laptop.component.css']
 })
 export class LabLaptopComponent {
+  isCliked: boolean = false;
 
+
+  click() {
+    this.isCliked = !this.isCliked
+  }
 }
