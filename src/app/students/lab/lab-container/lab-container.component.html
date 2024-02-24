@@ -1,0 +1,15 @@
+<div class='container mx-auto font-roboto'>
+
+    <div class='flex justify-center py-12'>
+        <div class='px-16'>
+            <app-lab-laptop (valueChanged)="handleValueChanged($event)"></app-lab-laptop>
+        </div>
+        
+        <div [ngClass]="{'flex-1': childValue, 'hidden': !childValue}" *ngIf="childValue">
+            <app-active-bar ></app-active-bar>
+        </div>
+    </div>
+    <div class='flex items-center justify-center w-full py-7'>
+        <app-lab-buttons></app-lab-buttons>
+    </div>
+</div>

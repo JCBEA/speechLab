@@ -1,0 +1,37 @@
+<aside class='max-w-[314px]'>
+    <h1 class='text-[14px] font-poppins font-semibold text-secondary text-start leading-5'>Active</h1>
+    <div class='px-5 py-6 border border-black shadow-md rounded-xl shadow-black/25'>
+          
+        <div class='flex flex-col gap-y-2'>
+          <span class='text-[#0375AF] font-semibold text-[14px] uppercase leading-[20px]'>Teacher</span>
+          <div class='flex items-center justify-between'>
+            <div class='flex items-center gap-2'>
+              <img class='rounded-full object-cover size-[30px]' src="assets/test.jpg" alt="">
+              <h1 class='leading-[20px] text-[18px] font-medium font-bold text-black/50 '>Prof. Maceda</h1>
+            </div>
+            <img class='h-5' src="assets/test2.png" alt="">
+          </div>
+        </div>
+      
+       
+        
+        <div class='my-3 bg-gradient-to-br from-[#0375AF] to-[#6AF3BC] h-px'></div>
+    
+    
+        <div class='flex flex-col gap-y-2'>
+          <span class='text-[#0375AF] font-semibold text-[14px] uppercase leading-[20px]'>Participants</span>
+          <div *ngFor="let item of ['com 1','com 2','com 3','com 4','com 5','com 6', 'com 7',]" class='flex items-center justify-between'>
+            <div class='flex items-center gap-2'>
+              <div class='bg-[#D9D9D9] rounded-full size-[30px]'></div>
+              <!-- <img class='rounded-full object-cover h-[30px]' src="assets/test.jpg" alt=""> -->
+              <h1 class='leading-[20px] text-[18px] font-medium text-black/50 '>{{item}}</h1>
+            </div>
+            <img *ngIf="item === 'com 1'; else test" class='h-5' src="assets/mic.png" alt="">
+            <ng-template #test>
+              <img class='h-5' src="assets/mute.png" alt="">
+            </ng-template>
+          </div>
+        </div>
+    
+        </div>
+</aside>
