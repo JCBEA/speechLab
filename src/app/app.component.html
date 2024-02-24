@@ -1,9 +1,16 @@
 <header class='font-roboto'>
-    <h1>main nav here</h1>
+  <div class="nav">
+    <mat-toolbar class="navbar">
+      <span>Welcome, Justine</span>
+      <span class="spacer"></span>
+      <input type="text" placeholder="Search.." class="search">
+      <button mat-button class="sbutton"><mat-icon>search</mat-icon></button>
+    </mat-toolbar>
+  </div>
     <nav>
         <ul class='flex items-center justify-center gap-x-4'>
             <li>
-                <a routerLink="home" routerLinkActive="font-extrabold bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text" 
+                <a routerLink="practice" routerLinkActive="font-extrabold bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text" 
                 class="text-2xl text-black/25">PRACTICE</a>
             </li>
             <li>
@@ -11,7 +18,7 @@
                 class="text-2xl text-black/25">LAB</a>
             </li>
             <li>
-                <a routerLink="test" routerLinkActive="font-extrabold bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text" 
+                <a routerLink="module" routerLinkActive="font-extrabold bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text" 
                 class="text-2xl text-black/25">MODULE</a>
             </li>
         </ul>
@@ -21,3 +28,23 @@
 <main>
     <router-outlet></router-outlet>
 </main>
+
+
+  <!-- <mat-tab-group dynamicHeight class="tabs" >
+    <mat-tab label="PRACTICE" class="on">
+      <div class="oone">
+        one
+      </div>
+    </mat-tab>
+    <mat-tab label="LAB" >
+      <div class="">
+        twos
+      </div>
+    </mat-tab>
+    <mat-tab label="MODULES">
+      <div class="small-box mat-elevation-z4">
+        3
+      </div>
+    </mat-tab>
+  </mat-tab-group> -->
+

@@ -10,7 +10,8 @@ module.exports = {
         secondary: '#6CF5BC'
       },
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif']
+        roboto: ['Roboto', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
       fontSize: {
         '25px': '25px'

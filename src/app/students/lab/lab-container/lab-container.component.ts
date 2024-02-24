@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./lab-container.component.css']
 })
 export class LabContainerComponent {
-  isClicked: boolean = true;
+  childValue: boolean = false;
+
+  handleValueChanged(value: boolean) {
+    this.childValue = value;
+  }
 }

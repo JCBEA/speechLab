@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-lab-laptop',
@@ -6,10 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./lab-laptop.component.css']
 })
 export class LabLaptopComponent {
-  isCliked: boolean = false;
+  @Output() valueChanged = new EventEmitter<boolean>();
+  value: boolean = false;
 
-
-  click() {
-    this.isCliked = !this.isCliked
+  toggleValue() {
+    this.value = !this.value;
+    this.valueChanged.emit(this.value);
   }
+
+
+  
 }
