@@ -1,1 +1,12 @@
-<p>practice-container works!</p>
+<div class="p-11 relative flex flex-wrap justify-center gap-4">
+    <div *ngFor="let _ of [].constructor(6); let i = index" class="boxClass h-60 w-60 relative rounded-[10px] cursor-pointer">
+      <div class="img h-12 w-full opacity-15">
+        <img src="assets/sampleLogo.jpg" alt="sampleLogo">
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-primary to-secondary p-2 rounded-br-[10px] rounded-bl-[10px]">
+        <p class="text-center font-poppins font-bold text-2xl text-white">ENGLISH</p>
+        <p class="text-center font-poppins font-bold text-2xl text-white">Practice {{ i + 1 }}</p>
+      </div>
+    </div>
+  </div>
+  
