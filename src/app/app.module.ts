@@ -44,7 +44,10 @@ import { ModalsComponent } from './components/modals/modals.component';
     ModuleContainerComponent,
     LabContainerTeacherComponent,
     LabLaptopTeacherComponent,
-    ModalsComponent
+    ModalsComponent,
+    TdashboardComponent,
+    DashboardComponent,
+    HeaderComponent
 
    
 
