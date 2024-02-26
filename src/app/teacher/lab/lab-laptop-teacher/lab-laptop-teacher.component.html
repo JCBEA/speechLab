@@ -5,56 +5,17 @@
     <div class='absolute top-3 bg-gradient-to-b from-primary to-secondary bottom-0 right-0 md:right-4 md:w-6 w-3 h-[96.2%] z-10 lg:right-6 lg:w-[38.86px]'></div>
     <div class='absolute bottom-0 z-20 w-full h-4 shadow-md lg:h-[46.04px] lg:inset-x-0 bg-gradient-to-r from-primary to-secondary rounded-br-xl rounded-bl-xl shadow-black/25'></div>
 
-    <button class='absolute inset-x-auto bottom-20 shadow-md shadow-[#00000040] rounded-full lg:size-[85px] size-14 flex justify-center items-center '>
+    <button onclick="my_modal_3.showModal()"  class='absolute inset-x-auto bottom-20 shadow-md shadow-[#00000040] rounded-full lg:size-[85px] size-14 flex justify-center items-center '>
         <img class='lg:size-[30px] size-5' src="assets/ask.png" alt="">
       </button>
 
+    <app-modals></app-modals>
+
 
       
       
 
-<div id="modal" class="fixed inset-0 z-50 px-4 pt-5 pb-6 overflow-y-auto sm:px-0 sm:pt-0">
-  <div class="fixed inset-0 transition-opacity opacity-75 bg-black/50 "></div>
-  <div class="relative mx-auto overflow-x-hidden transition-transform transform border border-black translate-y-28 sm:w-full md:w-1/2 lg:w-5/6 ">
-    <button class='fixed top-2 left-2' >
-        <img class='size-[45px]' src="assets/close.png" alt="">
-    </button> 
 
-    <!-- Main content -->
-    <div class="px-4 py-5 text-center bg-white shadow ">
-      
-
-      <button disabled class='leading-7 text-25px text-primary rounded-[30px] lg:w-[363px] py-2  shadow-md  font-bold shadow-black/25 pb-4 text-center border'>SELECT STUDENT</button>
-      <div class='relative flex justify-center gap-4 mt-5 border border-black'>
-        
-        <div class='pb-5 ' *ngFor="let _ of [1,2,3,4,5,6,7,8]">
-            <img src="assets/monitor.png" alt="">
-        </div>
-        <div class='absolute bottom-0 h-4 inset-x-14 bg-gradient-to-r from-primary to-secondary rounded-tr-xl rounded-tl-xl'></div>
-      </div>
-
-      <div class='relative flex justify-center gap-5 mt-5 border border-black'>
-        
-        <div class='pb-5' *ngFor="let _ of [1,2,3,4,5,6,7,8,9]">
-            <img src="assets/monitor.png" alt="">
-            
-        </div>
-       
-        <div class='absolute inset-x-0 bottom-0 h-4 bg-gradient-to-r from-primary to-secondary rounded-tr-xl rounded-tl-xl'></div>
-        
-      </div>
-
-      <div class='relative flex justify-center gap-5 mt-5 border border-black'>
-        
-        <div class='pb-5 ' *ngFor="let _ of [1,2,3,4,5,6,7,8]">
-            <img src="assets/monitor.png" alt="">
-            
-        </div>
-        <div class='absolute bottom-0 h-4 inset-x-14 bg-gradient-to-r from-primary to-secondary rounded-tr-xl rounded-tl-xl'></div>
-      </div>
-    </div>
-  </div>
-</div>
 
       
 
@@ -89,3 +50,7 @@
       </div>
     </div>
   </div> -->
+
+
+
+

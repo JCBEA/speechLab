@@ -27,6 +27,7 @@ import { LabLaptopTeacherComponent } from './teacher/lab/lab-laptop-teacher/lab-
 import { TdashboardComponent } from './teacher/tdashboard/tdashboard.component';
 import { DashboardComponent } from './students/dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { ModalsComponent } from './components/modals/modals.component';
 
 
 
@@ -43,9 +44,10 @@ import { HeaderComponent } from './header/header.component';
     ModuleContainerComponent,
     LabContainerTeacherComponent,
     LabLaptopTeacherComponent,
+    ModalsComponent,
     TdashboardComponent,
     DashboardComponent,
-    HeaderComponent,
+    HeaderComponent
 
    
 
