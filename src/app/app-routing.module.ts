@@ -7,6 +7,7 @@ import { LabContainerTeacherComponent } from './teacher/lab/lab-container-teache
 import { TdashboardComponent } from './teacher/tdashboard/tdashboard.component';
 import { LabLaptopComponent } from './students/lab/lab-laptop/lab-laptop.component';
 import { DashboardComponent } from './students/dashboard/dashboard.component';
+import { LearningModulesComponent } from './students/module/learning-modules/learning-modules.component';
 
 const routes: Routes = [
  {path: 'student', component: DashboardComponent, children: [
@@ -14,6 +15,7 @@ const routes: Routes = [
     {path: 'practice', component: PracticeContainerComponent},
     {path: 'lab', component:LabContainerComponent},
     {path: 'module' , component: ModuleContainerComponent},
+    {path: 'learning_module' , component: LearningModulesComponent},
   ]},
 {path: 'teacher', component: TdashboardComponent, children: [
   {path: '',redirectTo:'lab',pathMatch:'full'},
