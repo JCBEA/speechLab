@@ -8,7 +8,7 @@
               <div class="px-8 space-y-1 overflow-hidden"> 
                 <h1 class=" text-center uppercase font-extrabold bg-gradient-to-r from-[#1084b0] to-[#5be0b9] bg-clip-text text-transparent">{{item.title}}</h1>
                 <img alt="picture" src="{{item.image}}" class="h-[50%] lg:w-[70%] xs:w-[50%] supertiti:w-[50%] py-2 text mx-auto"> 
-                <button id="openModule" class="text-white w-[100%] rounded-[50px] font-bold text-lg
+                <button (click)="redirectToOtherPage()" class="text-white w-[100%] rounded-[50px] font-bold text-lg
                 bg-gradient-to-r from-primary to-secondary lg:p-0 sm:p-1 xs:p-1">OPEN</button>
               </div>
             </div>

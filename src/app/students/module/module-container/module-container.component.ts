@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-module-container',
@@ -6,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./module-container.component.css']
 })
 export class ModuleContainerComponent {
+  constructor(private router: Router) { }
 
   title = 'speechLab';
   
@@ -29,4 +32,10 @@ export class ModuleContainerComponent {
     title: 'Title 4',
     image: 'assets/OIP.jpg'
   }];
+
+
+  redirectToOtherPage() {
+    // Use the router to navigate to the desired page
+    this.router.navigate(['student/learning_module']); // Replace '/other-page' with the actual route you want to navigate to
+  }
 }

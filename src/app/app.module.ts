@@ -49,7 +49,7 @@ import { ModulePlaceholderComponent } from './components/module-placeholder/modu
     TdashboardComponent,
     DashboardComponent,
     HeaderComponent,
-    ModulePlaceholderComponent
+    ModulePlaceholderComponent,
 
    
 
