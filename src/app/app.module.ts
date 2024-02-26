@@ -28,7 +28,7 @@ import { TdashboardComponent } from './teacher/tdashboard/tdashboard.component';
 import { DashboardComponent } from './students/dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalsComponent } from './components/modals/modals.component';
-import { LearningModulesComponent } from './students/module/learning-modules/learning-modules.component';
+import { ModulePlaceholderComponent } from './components/module-placeholder/module-placeholder.component';
 
 
 
@@ -49,7 +49,7 @@ import { LearningModulesComponent } from './students/module/learning-modules/lea
     TdashboardComponent,
     DashboardComponent,
     HeaderComponent,
-    LearningModulesComponent
+    ModulePlaceholderComponent
 
    
 

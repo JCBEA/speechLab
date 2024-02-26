@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./lab-container-teacher.component.css']
 })
 export class LabContainerTeacherComponent {
+  childValue: boolean = true;
 
+  handleValueChanged(value: boolean) {
+    this.childValue = value;
+  }
 }
