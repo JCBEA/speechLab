@@ -29,5 +29,4 @@ export class ModuleContainerComponent {
     title: 'Title 4',
     image: 'assets/OIP.jpg'
   }];
-
 }
