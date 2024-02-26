@@ -1,0 +1,52 @@
+<!-- You can open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+<dialog id="my_modal_3" class="border border-black modal">
+
+   
+    
+  <div class="w-4/5 border border-blue-300">
+
+    <div class="relative w-full px-4 py-5 text-center bg-white border shadow">
+
+        <form method="dialog">
+            <button class='absolute top-2 left-2' >
+                <img class='size-[45px]' src="assets/close.png" alt="">
+            </button> 
+        </form>
+
+      
+
+        <button disabled class='leading-7 text-25px text-primary rounded-[30px] lg:w-[363px] py-2  shadow-md  font-bold shadow-black/25 pb-4 text-center border'>SELECT STUDENT</button>
+        <div class='relative flex justify-center gap-4 mt-5 border border-black'>
+          
+          <div class='pb-5 ' *ngFor="let _ of [1,2,3,4,5,6,7,8]">
+              <img src="assets/monitor.png" alt="">
+          </div>
+          <div class='absolute bottom-0 h-4 inset-x-14 bg-gradient-to-r from-primary to-secondary rounded-tr-xl rounded-tl-xl'></div>
+        </div>
+  
+        <div class='relative flex justify-center gap-5 mt-5 border border-black'>
+          
+          <div class='pb-5' *ngFor="let _ of [1,2,3,4,5,6,7,8,9]">
+              <img src="assets/monitor.png" alt="">
+              
+          </div>
+         
+          <div class='absolute inset-x-0 bottom-0 h-4 bg-gradient-to-r from-primary to-secondary rounded-tr-xl rounded-tl-xl'></div>
+          
+        </div>
+  
+        <div class='relative flex justify-center gap-5 mt-5 border border-black'>
+          
+          <div class='pb-5 ' *ngFor="let _ of [1,2,3,4,5,6,7,8]">
+              <img src="assets/monitor.png" alt="">
+              
+          </div>
+          <div class='absolute bottom-0 h-4 inset-x-14 bg-gradient-to-r from-primary to-secondary rounded-tr-xl rounded-tl-xl'></div>
+        </div>
+    </div>
+
+    
+    
+  </div>
+</dialog>
