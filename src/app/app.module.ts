@@ -24,6 +24,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { LabContainerTeacherComponent } from './teacher/lab/lab-container-teacher/lab-container-teacher.component';
 import { LabLaptopTeacherComponent } from './teacher/lab/lab-laptop-teacher/lab-laptop-teacher.component';
+import { TdashboardComponent } from './teacher/tdashboard/tdashboard.component';
+import { DashboardComponent } from './students/dashboard/dashboard.component';
 
 
 
@@ -40,6 +42,8 @@ import { LabLaptopTeacherComponent } from './teacher/lab/lab-laptop-teacher/lab-
     ModuleContainerComponent,
     LabContainerTeacherComponent,
     LabLaptopTeacherComponent,
+    TdashboardComponent,
+    DashboardComponent,
 
    
 
