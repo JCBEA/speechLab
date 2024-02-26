@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-learning-modules',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./learning-modules.component.css']
 })
 export class LearningModulesComponent {
+  constructor(private location: Location) { }
 
+  redirectToOtherPage() {
+    this.location.back();
+  }
+  
 }
