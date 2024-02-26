@@ -4,13 +4,24 @@ import { LabContainerComponent } from './students/lab/lab-container/lab-containe
 import { PracticeContainerComponent } from './students/practice/practice-container/practice-container.component';
 import { ModuleContainerComponent } from './students/module/module-container/module-container.component';
 import { LabContainerTeacherComponent } from './teacher/lab/lab-container-teacher/lab-container-teacher.component';
+import { TdashboardComponent } from './teacher/tdashboard/tdashboard.component';
+import { LabLaptopComponent } from './students/lab/lab-laptop/lab-laptop.component';
+import { DashboardComponent } from './students/dashboard/dashboard.component';
 
 const routes: Routes = [
-{path: '', redirectTo: 'practice', pathMatch: 'full'},
-{path: 'practice', component: PracticeContainerComponent},
-{path: 'lab', component:LabContainerComponent},
-{path: 'module' , component: ModuleContainerComponent},
-{path: 'teacher', component: LabContainerTeacherComponent}
+ {path: 'student', component: DashboardComponent, children: [
+    {path: '', redirectTo: 'practice', pathMatch: 'full'},
+    {path: 'practice', component: PracticeContainerComponent},
+    {path: 'lab', component:LabContainerComponent},
+    {path: 'module' , component: ModuleContainerComponent},
+  ]},
+{path: 'teacher', component: TdashboardComponent, children: [
+  {path: '',redirectTo:'lab',pathMatch:'full'},
+  {path: 'lab', component: LabContainerTeacherComponent},
+  {path: 'module' , component: ModuleContainerComponent},
+
+]
+}
 
 
 ];
