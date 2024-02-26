@@ -30,8 +30,4 @@ export class ModuleContainerComponent {
     image: 'assets/OIP.jpg'
   }];
 
-  childValue: boolean = false;
-  handleValueChanged(value: boolean) {
-    this.childValue = value;
-  }
 }
